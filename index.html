@@ -1,83 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sravani Mangali | Portfolio</title>
+    <title>Sravani Mangali | Data Science Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            color: #2563eb;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            font-weight: bold;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 350px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .certificate {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Hi, I'm Sravani Mangali 👋</h1>
+    <nav>
+        <h2>Sravani</h2>
 
-    <h2>Data Science Enthusiast</h2>
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-    <p>
-        I am a final-year B.Tech student interested in
-        Data Science, Python, SQL and Machine Learning.
-    </p>
 
-    <hr>
+    <section class="hero">
 
-    <h2>About Me</h2>
+        <div>
 
-    <p>
-        I am passionate about learning technology and building
-        practical projects. I am currently preparing for
-        technical interviews and starting my career in Data Science.
-    </p>
+            <p>Hello, I'm</p>
 
-    <h2>Skills</h2>
+            <h1>Sravani Mangali</h1>
 
-    <ul>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>DBMS</li>
-        <li>HTML</li>
-        <li>Machine Learning</li>
-    </ul>
+            <h2>Data Science Enthusiast</h2>
 
-    <h2>Projects</h2>
+            <p>
+                Final-year B.Tech student passionate about
+                Python, SQL, Machine Learning and Data Science.
+            </p>
 
-    <h3>Stock Price Prediction</h3>
+            <a class="btn" href="#projects">
+                View My Projects
+            </a>
 
-    <p>
-        Stock price prediction using GAN-LSTM-Attention model.
-    </p>
+        </div>
 
-    <h3>Smart Expense Tracker</h3>
+    </section>
 
-    <p>
-        A Python-based project for tracking and analyzing expenses.
-    </p>
 
-    <h2>Certificates</h2>
+    <section id="about">
 
-    <p>
-        National Student Paryavaran Competition (NSPC) 2026 -
-        Gold Badge
-    </p>
+        <h2 class="title">About Me</h2>
 
-    <h2>Contact</h2>
+        <div class="about">
 
-    <p>Email: Your Email Here</p>
+            <p>
+                I am a final-year B.Tech student interested in
+                Data Science and Machine Learning. I enjoy learning
+                Python, SQL and working with data to build practical
+                projects. I am currently preparing for technical
+                interviews and looking for opportunities to start
+                my career in the technology field.
+            </p>
 
-    <p>
-        GitHub:
-        <a href="https://github.com/sravanimangali02-design">
-            My GitHub
-        </a>
-    </p>
+        </div>
 
-    <p>
-        LinkedIn:
-        <a href="https://linkedin.com/in/sravani-sravani-6a9767413/">
-            My LinkedIn
-        </a>
-    </p>
+    </section>
+
+
+    <section id="skills">
+
+        <h2 class="title">My Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">Python</div>
+            <div class="skill">SQL</div>
+            <div class="skill">DBMS</div>
+            <div class="skill">HTML</div>
+            <div class="skill">Machine Learning</div>
+
+        </div>
+
+    </section>
+
+
+    <section id="projects">
+
+        <h2 class="title">My Projects</h2>
+
+        <div class="projects">
+
+            <div class="card">
+
+                <h3>Stock Price Prediction</h3>
+
+                <p>
+                    Stock price prediction project using
+                    GAN-LSTM-Attention model.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Smart Expense Tracker</h3>
+
+                <p>
+                    Python-based project for tracking expenses
+                    and analyzing spending patterns.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="certificates">
+
+        <h2 class="title">Certificates</h2>
+
+        <div class="certificate">
+
+            <h3>NSPC 2026 - Gold Badge</h3>
+
+            <p>
+                National Student Paryavaran Competition 2026
+            </p>
+
+            <br>
+
+            <a href="https://ecomitram.org/activities/nspc-2026/certificate/6aa1797c1ff1edf63543579b"
+               target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact">
+
+        <h2 class="title">Contact Me</h2>
+
+        <div class="contact">
+
+            <p>Email: YOUR_EMAIL@gmail.com</p>
+
+            <p>
+                GitHub:
+                <a href="https://github.com/sravanimangali02-design"
+                   target="_blank">
+                    View GitHub
+                </a>
+            </p>
+
+            <p>
+                LinkedIn:
+                <a href="https://linkedin.com/in/sravani-sravani-6a9767413/"
+                   target="_blank">
+                    View LinkedIn
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 Sravani Mangali | Data Science Portfolio</p>
+
+    </footer>
 
 </body>
-
 </html>
