@@ -17,166 +17,184 @@
         body {
             font-family: Arial, sans-serif;
             background: #f5f7fb;
-            color: #1f2937;
+            color: #222;
             line-height: 1.6;
         }
 
-        /* NAVIGATION */
         nav {
             background: #111827;
-            padding: 18px 8%;
+            padding: 15px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
         }
 
         nav h2 {
             color: white;
         }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
         }
 
-        nav a:hover {
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
             color: #60a5fa;
         }
 
-        /* HERO */
         .hero {
             min-height: 90vh;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 40px 20px;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #e0f2fe, #eef2ff);
         }
 
-        .hero h1 {
-            font-size: 55px;
-            margin-bottom: 10px;
+        .hero-content {
+            max-width: 750px;
         }
 
-        .hero h2 {
-            color: #2563eb;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            max-width: 650px;
-            margin: auto;
-            font-size: 18px;
-        }
-
-        /* PROFILE PHOTO */
         .profile-pic {
             width: 170px;
             height: 170px;
             object-fit: cover;
             border-radius: 50%;
-            margin-bottom: 25px;
-            border: 5px solid #2563eb;
+            border: 5px solid white;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            margin-bottom: 20px;
         }
 
-        /* BUTTON */
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .hero h3 {
+            font-size: 24px;
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #4b5563;
+            margin-bottom: 25px;
+        }
+
         .btn {
             display: inline-block;
-            margin-top: 25px;
             padding: 12px 25px;
             background: #2563eb;
             color: white;
             text-decoration: none;
             border-radius: 8px;
+            font-weight: bold;
+            margin: 5px;
         }
 
         .btn:hover {
             background: #1d4ed8;
         }
 
-        /* SECTIONS */
         section {
-            padding: 80px 8%;
+            padding: 70px 8%;
         }
 
-        .title {
+        section h2 {
             text-align: center;
             font-size: 32px;
-            margin-bottom: 40px;
+            margin-bottom: 35px;
+            color: #111827;
         }
 
-        /* ABOUT */
         .about {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             text-align: center;
             font-size: 18px;
+            color: #4b5563;
         }
 
-        /* SKILLS */
-        .skills {
+        .skills-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             gap: 15px;
-            flex-wrap: wrap;
         }
 
         .skill {
             background: white;
             padding: 15px 25px;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
             font-weight: bold;
         }
 
-        /* PROJECTS */
-        .projects {
-            display: flex;
-            justify-content: center;
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
-            flex-wrap: wrap;
         }
 
-        .card {
+        .project-card {
             background: white;
-            width: 350px;
-            padding: 30px;
+            padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
 
-        .card h3 {
-            margin-bottom: 15px;
+        .project-card h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
         }
 
-        /* CERTIFICATE */
+        .project-card p {
+            color: #555;
+        }
+
         .certificate {
-            max-width: 600px;
+            max-width: 750px;
             margin: auto;
             background: white;
             padding: 30px;
             text-align: center;
             border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .certificate h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
         }
 
         .certificate a {
+            display: inline-block;
+            margin-top: 15px;
             color: #2563eb;
             text-decoration: none;
             font-weight: bold;
         }
 
-        /* CONTACT */
         .contact {
             text-align: center;
         }
 
         .contact p {
-            margin: 12px;
+            margin: 10px;
+            font-size: 17px;
         }
 
         .contact a {
@@ -185,7 +203,6 @@
             font-weight: bold;
         }
 
-        /* FOOTER */
         footer {
             background: #111827;
             color: white;
@@ -193,34 +210,24 @@
             padding: 20px;
         }
 
-        /* MOBILE */
         @media (max-width: 700px) {
-
             nav {
                 flex-direction: column;
-                gap: 15px;
+                gap: 10px;
             }
 
-            nav a {
-                margin: 5px;
-                font-size: 14px;
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
             }
 
             .hero h1 {
-                font-size: 40px;
+                font-size: 36px;
             }
 
-            .hero h2 {
-                font-size: 22px;
-            }
-
-            .profile-pic {
-                width: 140px;
-                height: 140px;
-            }
-
-            .card {
-                width: 100%;
+            .hero h3 {
+                font-size: 20px;
             }
         }
     </style>
@@ -228,66 +235,62 @@
 
 <body>
 
-    <!-- NAVIGATION -->
+    <!-- Navigation -->
     <nav>
+        <h2>Sravani Mangali</h2>
 
-        <h2>Sravani</h2>
-
-        <div>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#certificates">Certificates</a>
-            <a href="#contact">Contact</a>
-        </div>
-
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificate">Certificate</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
 
-    <!-- HERO -->
-    <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
 
-        <div>
+        <div class="hero-content">
 
-            <!-- PROFILE PHOTO -->
             <img src="profile.jpg"
                  alt="Sravani Mangali"
                  class="profile-pic">
 
-            <p>Hello, I'm</p>
+            <h1>Hi, I'm Sravani Mangali 👋</h1>
 
-            <h1>Sravani Mangali</h1>
-
-            <h2>Data Science Enthusiast</h2>
+            <h3>Data Science Enthusiast</h3>
 
             <p>
-                Final-year B.Tech student passionate about
-                Python, SQL, Machine Learning and Data Science.
+                Final-year B.Tech student passionate about Data Science,
+                Machine Learning, Python and SQL.
             </p>
 
-            <a class="btn" href="#projects">
-                View My Projects
-            </a>
+            <a href="#projects" class="btn">View My Projects</a>
+
+            <a href="#contact" class="btn">Contact Me</a>
 
         </div>
 
     </section>
 
 
-    <!-- ABOUT -->
+    <!-- About Section -->
     <section id="about">
 
-        <h2 class="title">About Me</h2>
+        <h2>About Me</h2>
 
         <div class="about">
 
             <p>
-                I am a final-year B.Tech student interested in
-                Data Science and Machine Learning. I enjoy learning
-                Python, SQL and working with data to build practical
-                projects. I am currently preparing for technical
-                interviews and looking for opportunities to start
-                my career in the technology field.
+                I am a final-year B.Tech student interested in Data Science
+                and Machine Learning. I enjoy learning new technologies,
+                solving problems and building practical projects.
+                I am currently preparing for technical interviews and
+                looking for opportunities to start my professional career
+                in the field of Data Science.
             </p>
 
         </div>
@@ -295,50 +298,57 @@
     </section>
 
 
-    <!-- SKILLS -->
+    <!-- Skills Section -->
     <section id="skills">
 
-        <h2 class="title">My Skills</h2>
+        <h2>My Skills</h2>
 
-        <div class="skills">
+        <div class="skills-container">
 
             <div class="skill">Python</div>
+
             <div class="skill">SQL</div>
+
             <div class="skill">DBMS</div>
+
             <div class="skill">HTML</div>
+
             <div class="skill">Machine Learning</div>
+
+            <div class="skill">Data Science</div>
 
         </div>
 
     </section>
 
 
-    <!-- PROJECTS -->
+    <!-- Projects Section -->
     <section id="projects">
 
-        <h2 class="title">My Projects</h2>
+        <h2>My Projects</h2>
 
-        <div class="projects">
+        <div class="projects-container">
 
-            <div class="card">
+            <div class="project-card">
 
                 <h3>Stock Price Prediction</h3>
 
                 <p>
-                    Stock price prediction project using
-                    GAN-LSTM-Attention model.
+                    Developed a stock price prediction project using
+                    GAN-LSTM-Attention model to analyze stock market data
+                    and predict future price trends.
                 </p>
 
             </div>
 
 
-            <div class="card">
+            <div class="project-card">
 
                 <h3>Smart Expense Tracker</h3>
 
                 <p>
-                    Python-based project for tracking expenses
-                    and analyzing spending patterns.
+                    A simple expense tracking project designed to help
+                    users record, organize and monitor their daily expenses.
                 </p>
 
             </div>
@@ -348,20 +358,20 @@
     </section>
 
 
-    <!-- CERTIFICATES -->
-    <section id="certificates">
+    <!-- Certificate Section -->
+    <section id="certificate">
 
-        <h2 class="title">Certificates</h2>
+        <h2>Certificate</h2>
 
         <div class="certificate">
 
-            <h3>NSPC 2026 - Gold Badge</h3>
+            <h3>
+                National Student Paryavaran Competition (NSPC) 2026
+            </h3>
 
             <p>
-                National Student Paryavaran Competition 2026
+                Gold Badge – National Student Paryavaran Competition 2026
             </p>
-
-            <br>
 
             <a href="https://ecomitram.org/activities/nspc-2026/certificate/6aa1797c1ff1edf63543579b"
                target="_blank">
@@ -373,10 +383,10 @@
     </section>
 
 
-    <!-- CONTACT -->
+    <!-- Contact Section -->
     <section id="contact">
 
-        <h2 class="title">Contact Me</h2>
+        <h2>Contact Me</h2>
 
         <div class="contact">
 
@@ -388,18 +398,18 @@
             </p>
 
             <p>
-                🔗 GitHub:
+                💻 GitHub:
                 <a href="https://github.com/sravanimangali02-design"
                    target="_blank">
-                    View GitHub
+                    github.com/sravanimangali02-design
                 </a>
             </p>
 
             <p>
-                💼 LinkedIn:
+                🔗 LinkedIn:
                 <a href="https://linkedin.com/in/sravani-sravani-6a9767413/"
                    target="_blank">
-                    View LinkedIn
+                    linkedin.com/in/sravani-sravani-6a9767413
                 </a>
             </p>
 
@@ -408,7 +418,7 @@
     </section>
 
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer>
 
         <p>
