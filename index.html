@@ -11,9 +11,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        html {
             scroll-behavior: smooth;
         }
 
@@ -28,12 +25,15 @@
         nav {
             background: #111827;
             padding: 18px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             position: sticky;
             top: 0;
             z-index: 1000;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         nav h2 {
@@ -43,13 +43,13 @@
         nav ul {
             display: flex;
             list-style: none;
-            gap: 22px;
+            gap: 25px;
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
+            font-size: 15px;
         }
 
         nav ul li a:hover {
@@ -64,32 +64,31 @@
             align-items: center;
             text-align: center;
             padding: 50px 20px;
-            background: linear-gradient(135deg, #dbeafe, #eef2ff);
+            background: linear-gradient(135deg, #eef2ff, #f8fafc);
         }
 
         .hero-content {
             max-width: 800px;
         }
 
-        /* PROFILE PHOTO */
         .profile-pic {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
+            width: 170px;
+            height: 170px;
             object-fit: cover;
+            border-radius: 50%;
             border: 5px solid white;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
             margin-bottom: 25px;
         }
 
         .hero h1 {
-            font-size: 45px;
+            font-size: 48px;
             color: #111827;
             margin-bottom: 10px;
         }
 
-        .hero h3 {
-            font-size: 24px;
+        .hero h2 {
+            font-size: 25px;
             color: #2563eb;
             margin-bottom: 15px;
         }
@@ -100,163 +99,192 @@
             margin-bottom: 25px;
         }
 
-        /* BUTTONS */
         .btn {
             display: inline-block;
-            padding: 12px 25px;
-            margin: 6px;
             background: #2563eb;
             color: white;
-            text-decoration: none;
+            padding: 12px 25px;
             border-radius: 8px;
-            font-weight: bold;
+            text-decoration: none;
+            margin: 5px;
+            transition: 0.3s;
         }
 
         .btn:hover {
             background: #1d4ed8;
+            transform: translateY(-2px);
         }
 
-        .resume-btn {
-            background: #111827;
+        .btn-outline {
+            background: transparent;
+            color: #2563eb;
+            border: 2px solid #2563eb;
         }
 
-        .resume-btn:hover {
-            background: #374151;
+        .btn-outline:hover {
+            background: #2563eb;
+            color: white;
         }
 
-        /* SECTIONS */
+        /* COMMON SECTION */
         section {
             padding: 70px 8%;
         }
 
-        section h2 {
+        .section-title {
             text-align: center;
             font-size: 32px;
-            margin-bottom: 35px;
+            margin-bottom: 40px;
             color: #111827;
         }
 
         /* ABOUT */
         .about {
+            background: white;
+        }
+
+        .about-content {
             max-width: 850px;
             margin: auto;
             text-align: center;
-            font-size: 18px;
+            font-size: 17px;
             color: #4b5563;
         }
 
         /* SKILLS */
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
         }
 
         .skill {
             background: white;
-            padding: 15px 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
             font-weight: bold;
+            color: #1f2937;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
         }
 
         /* PROJECTS */
         .projects {
+            background: white;
+        }
+
+        .projects-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
         }
 
-        .project {
-            background: white;
-            padding: 25px;
+        .project-card {
+            background: #f8fafc;
+            padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+            transition: 0.3s;
         }
 
-        .project h3 {
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
             color: #2563eb;
             margin-bottom: 12px;
         }
 
-        .project p {
-            color: #555;
+        .project-card p {
+            color: #4b5563;
+            margin-bottom: 15px;
         }
 
         /* CERTIFICATE */
-        .certificate-box {
-            max-width: 750px;
+        .certificate-card {
+            max-width: 700px;
             margin: auto;
             background: white;
             padding: 30px;
-            border-radius: 12px;
             text-align: center;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
         }
 
-        .certificate-box h3 {
+        .certificate-card h3 {
             color: #2563eb;
             margin-bottom: 10px;
         }
 
-        .certificate-box a {
-            display: inline-block;
-            margin-top: 15px;
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: bold;
+        .certificate-card p {
+            color: #4b5563;
+            margin-bottom: 20px;
         }
 
         /* CONTACT */
         .contact {
+            background: #111827;
+            color: white;
             text-align: center;
         }
 
+        .contact .section-title {
+            color: white;
+        }
+
         .contact p {
-            margin: 15px;
-            font-size: 17px;
+            margin: 10px 0;
         }
 
         .contact a {
-            color: #2563eb;
+            color: #60a5fa;
             text-decoration: none;
-            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
         }
 
         /* FOOTER */
         footer {
-            background: #111827;
-            color: white;
+            background: #030712;
+            color: #9ca3af;
             text-align: center;
             padding: 20px;
         }
 
         /* MOBILE */
-        @media (max-width: 700px) {
+        @media (max-width: 768px) {
 
-            nav {
+            nav .container {
                 flex-direction: column;
                 gap: 15px;
             }
 
             nav ul {
+                gap: 12px;
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 15px;
             }
 
             .hero h1 {
-                font-size: 34px;
+                font-size: 36px;
             }
 
-            .hero h3 {
+            .hero h2 {
                 font-size: 21px;
             }
 
-            .profile-pic {
-                width: 150px;
-                height: 150px;
+            section {
+                padding: 50px 5%;
             }
         }
     </style>
@@ -264,20 +292,20 @@
 
 <body>
 
-    <!-- NAVIGATION -->
+    <!-- NAVBAR -->
     <nav>
+        <div class="container">
+            <h2>Sravani Mangali</h2>
 
-        <h2>Sravani Mangali</h2>
-
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certificate">Certificate</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificate">Certificate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
 
@@ -286,7 +314,7 @@
 
         <div class="hero-content">
 
-            <!-- PROFILE PHOTO -->
+            <!-- PHOTO -->
             <img
                 src="profile.jpg"
                 alt="Sravani Mangali"
@@ -295,27 +323,19 @@
 
             <h1>Hi, I'm Sravani Mangali 👋</h1>
 
-            <h3>Data Science Enthusiast</h3>
+            <h2>Data Science Enthusiast</h2>
 
             <p>
-                Final-year B.Tech student passionate about
-                Data Science, Machine Learning, Python and SQL.
+                Final-year B.Tech student passionate about Data Science,
+                Python, SQL, Machine Learning and building practical projects.
             </p>
 
-            <!-- RESUME -->
-            <a
-                href="resume.pdf"
-                target="_blank"
-                class="btn resume-btn"
-            >
-                📄 View My Resume
+            <a href="#projects" class="btn">
+                View My Projects
             </a>
 
-            <a
-                href="#projects"
-                class="btn"
-            >
-                View My Projects
+            <a href="#contact" class="btn btn-outline">
+                Contact Me
             </a>
 
         </div>
@@ -324,19 +344,26 @@
 
 
     <!-- ABOUT -->
-    <section id="about">
+    <section class="about" id="about">
 
-        <h2>About Me</h2>
+        <h2 class="section-title">About Me</h2>
 
-        <div class="about">
+        <div class="about-content">
 
             <p>
-                I am a final-year B.Tech student interested in
-                Data Science and Machine Learning. I enjoy learning
-                new technologies, solving problems and building
-                practical projects. I am currently preparing for
-                technical interviews and looking for opportunities
-                to start my professional career in Data Science.
+                I am a final-year B.Tech student interested in Data Science
+                and Machine Learning. I am currently developing my technical
+                skills in Python, SQL, DBMS, HTML and Machine Learning.
+            </p>
+
+            <br>
+
+            <p>
+                I enjoy learning new technologies and working on practical
+                projects that help me improve my problem-solving and
+                analytical skills. I am currently preparing for technical
+                interviews and entry-level opportunities in the Data Science
+                and IT domain.
             </p>
 
         </div>
@@ -347,15 +374,20 @@
     <!-- SKILLS -->
     <section id="skills">
 
-        <h2>My Skills</h2>
+        <h2 class="section-title">My Skills</h2>
 
-        <div class="skills">
+        <div class="skills-container">
 
             <div class="skill">Python</div>
+
             <div class="skill">SQL</div>
+
             <div class="skill">DBMS</div>
+
             <div class="skill">HTML</div>
+
             <div class="skill">Machine Learning</div>
+
             <div class="skill">Data Science</div>
 
         </div>
@@ -364,32 +396,41 @@
 
 
     <!-- PROJECTS -->
-    <section id="projects">
+    <section class="projects" id="projects">
 
-        <h2>My Projects</h2>
+        <h2 class="section-title">My Projects</h2>
 
-        <div class="projects">
+        <div class="projects-container">
 
-            <div class="project">
+            <div class="project-card">
 
                 <h3>Stock Price Prediction</h3>
 
                 <p>
-                    Stock price prediction project using
-                    GAN-LSTM-Attention model to analyze stock
-                    market data and predict future price trends.
+                    A machine learning project focused on predicting stock
+                    prices using a GAN-LSTM-Attention model.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    Python, Machine Learning, Deep Learning
                 </p>
 
             </div>
 
 
-            <div class="project">
+            <div class="project-card">
 
                 <h3>Smart Expense Tracker</h3>
 
                 <p>
-                    A simple expense tracking project designed
-                    to record, organize and monitor daily expenses.
+                    A simple project designed to help users manage and track
+                    their daily expenses efficiently.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    Python, HTML, Data Handling
                 </p>
 
             </div>
@@ -402,21 +443,22 @@
     <!-- CERTIFICATE -->
     <section id="certificate">
 
-        <h2>Certificate</h2>
+        <h2 class="section-title">Certificates</h2>
 
-        <div class="certificate-box">
+        <div class="certificate-card">
 
             <h3>
                 National Student Paryavaran Competition (NSPC) 2026
             </h3>
 
             <p>
-                Gold Badge – National Student Paryavaran Competition 2026
+                Gold Badge
             </p>
 
             <a
                 href="https://ecomitram.org/activities/nspc-2026/certificate/6aa1797c1ff1edf63543579b"
                 target="_blank"
+                class="btn"
             >
                 View Certificate
             </a>
@@ -427,43 +469,36 @@
 
 
     <!-- CONTACT -->
-    <section id="contact">
+    <section class="contact" id="contact">
 
-        <h2>Contact Me</h2>
+        <h2 class="section-title">Contact Me</h2>
 
-        <div class="contact">
+        <p>
+            📧 Email:
+            <a href="mailto:sravanimangali02@gmail.com">
+                sravanimangali02@gmail.com
+            </a>
+        </p>
 
-            <!-- EMAIL -->
-            <p>
-                📧 Email:
-                <a href="mailto:sravanimangali02@gmail.com">
-                    sravanimangali02@gmail.com
-                </a>
-            </p>
+        <p>
+            💻 GitHub:
+            <a
+                href="https://github.com/sravanimangali02-design"
+                target="_blank"
+            >
+                github.com/sravanimangali02-design
+            </a>
+        </p>
 
-            <!-- GITHUB -->
-            <p>
-                💻 GitHub:
-                <a
-                    href="https://github.com/sravanimangali02-design"
-                    target="_blank"
-                >
-                    github.com/sravanimangali02-design
-                </a>
-            </p>
-
-            <!-- LINKEDIN -->
-            <p>
-                🔗 LinkedIn:
-                <a
-                    href="https://linkedin.com/in/sravani-sravani-6a9767413/"
-                    target="_blank"
-                >
-                    linkedin.com/in/sravani-sravani-6a9767413
-                </a>
-            </p>
-
-        </div>
+        <p>
+            🔗 LinkedIn:
+            <a
+                href="https://linkedin.com/in/sravani-sravani-6a9767413/"
+                target="_blank"
+            >
+                linkedin.com/in/sravani-sravani-6a9767413
+            </a>
+        </p>
 
     </section>
 
@@ -472,7 +507,7 @@
     <footer>
 
         <p>
-            © 2026 Sravani Mangali | Data Science Portfolio
+            © 2026 Sravani Mangali. All Rights Reserved.
         </p>
 
     </footer>
