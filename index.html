@@ -66,13 +66,14 @@
             max-width: 750px;
         }
 
+        /* PROFILE PHOTO */
         .profile-pic {
-            width: 170px;
-            height: 170px;
+            width: 180px;
+            height: 180px;
             object-fit: cover;
             border-radius: 50%;
             border: 5px solid white;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
             margin-bottom: 20px;
         }
 
@@ -161,10 +162,6 @@
             margin-bottom: 10px;
         }
 
-        .project-card p {
-            color: #555;
-        }
-
         .certificate {
             max-width: 750px;
             margin: auto;
@@ -193,7 +190,7 @@
         }
 
         .contact p {
-            margin: 10px;
+            margin: 12px;
             font-size: 17px;
         }
 
@@ -211,6 +208,7 @@
         }
 
         @media (max-width: 700px) {
+
             nav {
                 flex-direction: column;
                 gap: 10px;
@@ -229,14 +227,20 @@
             .hero h3 {
                 font-size: 20px;
             }
+
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <!-- NAVIGATION -->
     <nav>
+
         <h2>Sravani Mangali</h2>
 
         <ul>
@@ -247,14 +251,16 @@
             <li><a href="#certificate">Certificate</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+
     </nav>
 
 
-    <!-- Hero Section -->
+    <!-- HERO -->
     <section class="hero" id="home">
 
         <div class="hero-content">
 
+            <!-- YOUR PHOTO -->
             <img src="profile.jpg"
                  alt="Sravani Mangali"
                  class="profile-pic">
@@ -264,20 +270,24 @@
             <h3>Data Science Enthusiast</h3>
 
             <p>
-                Final-year B.Tech student passionate about Data Science,
-                Machine Learning, Python and SQL.
+                Final-year B.Tech student passionate about
+                Data Science, Machine Learning, Python and SQL.
             </p>
 
-            <a href="#projects" class="btn">View My Projects</a>
+            <a href="#projects" class="btn">
+                View My Projects
+            </a>
 
-            <a href="#contact" class="btn">Contact Me</a>
+            <a href="#contact" class="btn">
+                Contact Me
+            </a>
 
         </div>
 
     </section>
 
 
-    <!-- About Section -->
+    <!-- ABOUT -->
     <section id="about">
 
         <h2>About Me</h2>
@@ -285,12 +295,12 @@
         <div class="about">
 
             <p>
-                I am a final-year B.Tech student interested in Data Science
-                and Machine Learning. I enjoy learning new technologies,
-                solving problems and building practical projects.
-                I am currently preparing for technical interviews and
-                looking for opportunities to start my professional career
-                in the field of Data Science.
+                I am a final-year B.Tech student interested in
+                Data Science and Machine Learning. I enjoy learning
+                new technologies, solving problems and building
+                practical projects. I am currently preparing for
+                technical interviews and looking for opportunities
+                to start my professional career in Data Science.
             </p>
 
         </div>
@@ -298,7 +308,7 @@
     </section>
 
 
-    <!-- Skills Section -->
+    <!-- SKILLS -->
     <section id="skills">
 
         <h2>My Skills</h2>
@@ -306,15 +316,10 @@
         <div class="skills-container">
 
             <div class="skill">Python</div>
-
             <div class="skill">SQL</div>
-
             <div class="skill">DBMS</div>
-
             <div class="skill">HTML</div>
-
             <div class="skill">Machine Learning</div>
-
             <div class="skill">Data Science</div>
 
         </div>
@@ -322,7 +327,7 @@
     </section>
 
 
-    <!-- Projects Section -->
+    <!-- PROJECTS -->
     <section id="projects">
 
         <h2>My Projects</h2>
@@ -331,12 +336,14 @@
 
             <div class="project-card">
 
-                <h3>Stock Price Prediction</h3>
+                <h3>
+                    Stock Price Prediction
+                </h3>
 
                 <p>
-                    Developed a stock price prediction project using
-                    GAN-LSTM-Attention model to analyze stock market data
-                    and predict future price trends.
+                    Developed a stock price prediction project
+                    using GAN-LSTM-Attention model to analyze
+                    stock market data and predict future price trends.
                 </p>
 
             </div>
@@ -344,11 +351,14 @@
 
             <div class="project-card">
 
-                <h3>Smart Expense Tracker</h3>
+                <h3>
+                    Smart Expense Tracker
+                </h3>
 
                 <p>
-                    A simple expense tracking project designed to help
-                    users record, organize and monitor their daily expenses.
+                    A simple expense tracking project designed
+                    to help users record, organize and monitor
+                    their daily expenses.
                 </p>
 
             </div>
@@ -358,7 +368,7 @@
     </section>
 
 
-    <!-- Certificate Section -->
+    <!-- CERTIFICATE -->
     <section id="certificate">
 
         <h2>Certificate</h2>
@@ -373,8 +383,9 @@
                 Gold Badge – National Student Paryavaran Competition 2026
             </p>
 
-            <a href="https://ecomitram.org/activities/nspc-2026/certificate/6aa1797c1ff1edf63543579b"
-               target="_blank">
+            <a
+                href="https://ecomitram.org/activities/nspc-2026/certificate/6aa1797c1ff1edf63543579b"
+                target="_blank">
                 View Certificate
             </a>
 
@@ -383,13 +394,14 @@
     </section>
 
 
-    <!-- Contact Section -->
+    <!-- CONTACT -->
     <section id="contact">
 
         <h2>Contact Me</h2>
 
         <div class="contact">
 
+            <!-- EMAIL -->
             <p>
                 📧 Email:
                 <a href="mailto:YOUR_EMAIL@gmail.com">
@@ -397,18 +409,22 @@
                 </a>
             </p>
 
+            <!-- GITHUB -->
             <p>
                 💻 GitHub:
-                <a href="https://github.com/sravanimangali02-design"
-                   target="_blank">
+                <a
+                    href="https://github.com/sravanimangali02-design"
+                    target="_blank">
                     github.com/sravanimangali02-design
                 </a>
             </p>
 
+            <!-- LINKEDIN -->
             <p>
                 🔗 LinkedIn:
-                <a href="https://linkedin.com/in/sravani-sravani-6a9767413/"
-                   target="_blank">
+                <a
+                    href="https://linkedin.com/in/sravani-sravani-6a9767413/"
+                    target="_blank">
                     linkedin.com/in/sravani-sravani-6a9767413
                 </a>
             </p>
@@ -418,7 +434,7 @@
     </section>
 
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
 
         <p>
