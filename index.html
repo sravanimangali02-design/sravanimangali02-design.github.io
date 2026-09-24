@@ -15,9 +15,9 @@
 }
 
 body{
-    font-family:Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     background:#f5f7fb;
-    color:#222;
+    color:#1f2937;
     line-height:1.6;
 }
 
@@ -31,13 +31,17 @@ nav{
 }
 
 .nav-container{
+    max-width:1200px;
+    margin:auto;
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
 
-nav h2{
+.logo{
     color:white;
+    font-size:22px;
+    font-weight:bold;
 }
 
 nav ul{
@@ -49,6 +53,7 @@ nav ul{
 nav ul li a{
     color:white;
     text-decoration:none;
+    font-size:15px;
 }
 
 nav ul li a:hover{
@@ -62,7 +67,7 @@ nav ul li a:hover{
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:50px 20px;
+    padding:60px 20px;
     background:linear-gradient(135deg,#eef2ff,#f8fafc);
 }
 
@@ -87,8 +92,8 @@ nav ul li a:hover{
 }
 
 .hero h2{
-    color:#2563eb;
     font-size:25px;
+    color:#2563eb;
     margin-bottom:15px;
 }
 
@@ -98,14 +103,15 @@ nav ul li a:hover{
     margin-bottom:25px;
 }
 
+/* BUTTONS */
 .btn{
     display:inline-block;
+    padding:12px 24px;
+    margin:6px;
     background:#2563eb;
     color:white;
-    padding:12px 24px;
-    border-radius:8px;
     text-decoration:none;
-    margin:6px;
+    border-radius:8px;
     transition:0.3s;
 }
 
@@ -118,6 +124,11 @@ nav ul li a:hover{
     background:white;
     color:#2563eb;
     border:2px solid #2563eb;
+}
+
+.btn-outline:hover{
+    background:#2563eb;
+    color:white;
 }
 
 /* SECTIONS */
@@ -174,6 +185,8 @@ section{
 }
 
 .projects-container{
+    max-width:1000px;
+    margin:auto;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:25px;
@@ -197,8 +210,12 @@ section{
 }
 
 /* CERTIFICATES */
+.certificates{
+    background:#f5f7fb;
+}
+
 .certificate-container{
-    max-width:850px;
+    max-width:900px;
     margin:auto;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -215,7 +232,7 @@ section{
 
 .certificate-card h3{
     color:#2563eb;
-    margin-bottom:10px;
+    margin-bottom:12px;
 }
 
 .certificate-card p{
@@ -252,6 +269,10 @@ section{
 .contact a{
     color:#60a5fa;
     text-decoration:none;
+}
+
+.contact a:hover{
+    text-decoration:underline;
 }
 
 /* FOOTER */
@@ -297,7 +318,9 @@ footer{
 <nav>
 <div class="nav-container">
 
-<h2>Sravani Mangali</h2>
+<div class="logo">
+Sravani Mangali
+</div>
 
 <ul>
 <li><a href="#home">Home</a></li>
@@ -318,9 +341,13 @@ footer{
 
 <div class="hero-content">
 
-<img src="profile.jpg"
-     alt="Sravani Mangali"
-     class="profile-pic">
+<!-- PROFILE PHOTO -->
+<img
+src="profile.jpg"
+alt="Sravani Mangali"
+class="profile-pic"
+onerror="this.style.display='none';"
+>
 
 <h1>Hi, I'm Sravani Mangali 👋</h1>
 
@@ -335,19 +362,12 @@ Python, SQL, Machine Learning and practical projects.
 View Projects
 </a>
 
-<a href="resume.pdf"
-   target="_blank"
-   class="btn btn-outline">
+<a href="#resume" class="btn btn-outline">
 View Resume
 </a>
 
-<a href="resume.pdf"
-   download
-   class="btn">
-Download Resume
-</a>
-
 </div>
+
 </section>
 
 
@@ -360,8 +380,8 @@ Download Resume
 
 <p>
 I am a final-year B.Tech student interested in Data Science
-and Machine Learning. I have been developing my skills in
-Python, SQL, DBMS, HTML and Machine Learning.
+and Machine Learning. I am developing my technical skills
+in Python, SQL, DBMS, HTML and Machine Learning.
 </p>
 
 <br>
@@ -373,6 +393,7 @@ and entry-level opportunities in the IT and Data Science domain.
 </p>
 
 </div>
+
 </section>
 
 
@@ -391,6 +412,7 @@ and entry-level opportunities in the IT and Data Science domain.
 <div class="skill">Data Science</div>
 
 </div>
+
 </section>
 
 
@@ -435,18 +457,19 @@ Python, HTML, Data Handling
 </div>
 
 </div>
+
 </section>
 
 
 <!-- CERTIFICATES -->
-<section id="certificates">
+<section class="certificates" id="certificates">
 
 <h2 class="section-title">Certificates</h2>
 
 <div class="certificate-container">
 
-<!-- CERTIFICATE 1 -->
 
+<!-- CERTIFICATE 1 -->
 <div class="certificate-card">
 
 <h3>
@@ -469,16 +492,15 @@ View Certificate
 
 
 <!-- CERTIFICATE 2 -->
-
 <div class="certificate-card">
 
 <h3>
-Data Science / Technical Certificate
+Technical / Data Science Certificate
 </h3>
 
 <p>
-Certificate of achievement in a technical
-learning program.
+Certificate of achievement in technical
+learning and skill development.
 </p>
 
 <a href="#" class="btn">
@@ -487,7 +509,9 @@ View Certificate
 
 </div>
 
+
 </div>
+
 </section>
 
 
@@ -497,18 +521,20 @@ View Certificate
 <h2 class="section-title">My Resume</h2>
 
 <p>
-You can view or download my latest resume.
+Here you can view or download my latest resume.
 </p>
 
-<a href="resume.pdf"
-   target="_blank"
-   class="btn">
+<a
+href="resume.pdf"
+target="_blank"
+class="btn">
 📄 View Resume
 </a>
 
-<a href="resume.pdf"
-   download
-   class="btn">
+<a
+href="resume.pdf"
+download
+class="btn">
 ⬇️ Download Resume
 </a>
 
