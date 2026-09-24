@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sravani Mangali | Portfolio</title>
+<title>Sravani Mangali | Data Science Portfolio</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -22,6 +23,7 @@ body{
 }
 
 /* NAVBAR */
+
 nav{
     background:#111827;
     padding:18px 7%;
@@ -53,14 +55,15 @@ nav ul{
 nav ul li a{
     color:white;
     text-decoration:none;
-    font-size:15px;
 }
 
 nav ul li a:hover{
     color:#60a5fa;
 }
 
+
 /* HERO */
+
 .hero{
     min-height:90vh;
     display:flex;
@@ -75,6 +78,9 @@ nav ul li a:hover{
     max-width:850px;
 }
 
+
+/* PROFILE PHOTO */
+
 .profile-pic{
     width:180px;
     height:180px;
@@ -84,6 +90,9 @@ nav ul li a:hover{
     box-shadow:0 8px 25px rgba(0,0,0,0.18);
     margin-bottom:25px;
 }
+
+
+/* HERO TEXT */
 
 .hero h1{
     font-size:46px;
@@ -103,7 +112,9 @@ nav ul li a:hover{
     margin-bottom:25px;
 }
 
-/* BUTTONS */
+
+/* BUTTON */
+
 .btn{
     display:inline-block;
     padding:12px 24px;
@@ -126,12 +137,9 @@ nav ul li a:hover{
     border:2px solid #2563eb;
 }
 
-.btn-outline:hover{
-    background:#2563eb;
-    color:white;
-}
 
 /* SECTIONS */
+
 section{
     padding:70px 8%;
 }
@@ -143,7 +151,9 @@ section{
     color:#111827;
 }
 
+
 /* ABOUT */
+
 .about{
     background:white;
 }
@@ -156,7 +166,9 @@ section{
     font-size:17px;
 }
 
+
 /* SKILLS */
+
 .skills-container{
     max-width:1000px;
     margin:auto;
@@ -179,7 +191,9 @@ section{
     transform:translateY(-5px);
 }
 
+
 /* PROJECTS */
+
 .projects{
     background:white;
 }
@@ -209,13 +223,15 @@ section{
     margin-bottom:12px;
 }
 
+
 /* CERTIFICATES */
+
 .certificates{
     background:#f5f7fb;
 }
 
 .certificate-container{
-    max-width:900px;
+    max-width:1000px;
     margin:auto;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -240,7 +256,9 @@ section{
     margin-bottom:15px;
 }
 
+
 /* RESUME */
+
 .resume{
     background:white;
     text-align:center;
@@ -251,7 +269,9 @@ section{
     margin-bottom:20px;
 }
 
+
 /* CONTACT */
+
 .contact{
     background:#111827;
     color:white;
@@ -271,11 +291,9 @@ section{
     text-decoration:none;
 }
 
-.contact a:hover{
-    text-decoration:underline;
-}
 
 /* FOOTER */
+
 footer{
     background:#030712;
     color:#9ca3af;
@@ -283,7 +301,9 @@ footer{
     padding:20px;
 }
 
+
 /* MOBILE */
+
 @media(max-width:768px){
 
     .nav-container{
@@ -308,14 +328,20 @@ footer{
     section{
         padding:50px 5%;
     }
+
 }
+
 </style>
 </head>
 
+
 <body>
 
+
 <!-- NAVBAR -->
+
 <nav>
+
 <div class="nav-container">
 
 <div class="logo">
@@ -323,6 +349,7 @@ Sravani Mangali
 </div>
 
 <ul>
+
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#skills">Skills</a></li>
@@ -330,51 +357,76 @@ Sravani Mangali
 <li><a href="#certificates">Certificates</a></li>
 <li><a href="#resume">Resume</a></li>
 <li><a href="#contact">Contact</a></li>
+
 </ul>
 
 </div>
+
 </nav>
 
 
+
 <!-- HOME -->
+
 <section class="hero" id="home">
 
 <div class="hero-content">
 
-<!-- PROFILE PHOTO -->
+
 <img
 src="profile.jpg"
 alt="Sravani Mangali"
 class="profile-pic"
-onerror="this.style.display='none';"
 >
 
-<h1>Hi, I'm Sravani Mangali 👋</h1>
 
-<h2>Data Science Enthusiast</h2>
+<h1>
+Hi, I'm Sravani Mangali 👋
+</h1>
+
+
+<h2>
+Data Science Enthusiast
+</h2>
+
 
 <p>
 Final-year B.Tech student passionate about Data Science,
 Python, SQL, Machine Learning and practical projects.
 </p>
 
-<a href="#projects" class="btn">
+
+<a
+href="#projects"
+class="btn">
 View Projects
 </a>
 
-<a href="#resume" class="btn btn-outline">
+
+<a
+href="resume.pdf"
+target="_blank"
+class="btn btn-outline">
 View Resume
 </a>
+
 
 </div>
 
 </section>
 
 
-<!-- ABOUT -->
-<section class="about" id="about">
 
-<h2 class="section-title">About Me</h2>
+<!-- ABOUT -->
+
+<section
+class="about"
+id="about">
+
+<h2 class="section-title">
+About Me
+</h2>
+
 
 <div class="about-content">
 
@@ -384,7 +436,9 @@ and Machine Learning. I am developing my technical skills
 in Python, SQL, DBMS, HTML and Machine Learning.
 </p>
 
+
 <br>
+
 
 <p>
 I enjoy learning new technologies and building practical
@@ -397,35 +451,67 @@ and entry-level opportunities in the IT and Data Science domain.
 </section>
 
 
+
 <!-- SKILLS -->
+
 <section id="skills">
 
-<h2 class="section-title">My Skills</h2>
+<h2 class="section-title">
+My Skills
+</h2>
+
 
 <div class="skills-container">
 
-<div class="skill">Python</div>
-<div class="skill">SQL</div>
-<div class="skill">DBMS</div>
-<div class="skill">HTML</div>
-<div class="skill">Machine Learning</div>
-<div class="skill">Data Science</div>
+<div class="skill">
+Python
+</div>
+
+<div class="skill">
+SQL
+</div>
+
+<div class="skill">
+DBMS
+</div>
+
+<div class="skill">
+HTML
+</div>
+
+<div class="skill">
+Machine Learning
+</div>
+
+<div class="skill">
+Data Science
+</div>
 
 </div>
 
 </section>
 
 
-<!-- PROJECTS -->
-<section class="projects" id="projects">
 
-<h2 class="section-title">My Projects</h2>
+<!-- PROJECTS -->
+
+<section
+class="projects"
+id="projects">
+
+<h2 class="section-title">
+My Projects
+</h2>
+
 
 <div class="projects-container">
 
+
 <div class="project-card">
 
-<h3>Stock Price Prediction</h3>
+<h3>
+Stock Price Prediction
+</h3>
 
 <p>
 Stock price prediction project using
@@ -440,9 +526,12 @@ Python, Machine Learning, Deep Learning
 </div>
 
 
+
 <div class="project-card">
 
-<h3>Smart Expense Tracker</h3>
+<h3>
+Smart Expense Tracker
+</h3>
 
 <p>
 A project designed to manage and track
@@ -456,20 +545,29 @@ Python, HTML, Data Handling
 
 </div>
 
+
 </div>
 
 </section>
 
 
-<!-- CERTIFICATES -->
-<section class="certificates" id="certificates">
 
-<h2 class="section-title">Certificates</h2>
+<!-- CERTIFICATES -->
+
+<section
+class="certificates"
+id="certificates">
+
+<h2 class="section-title">
+Certificates
+</h2>
+
 
 <div class="certificate-container">
 
 
-<!-- CERTIFICATE 1 -->
+<!-- NSPC CERTIFICATE -->
+
 <div class="certificate-card">
 
 <h3>
@@ -485,26 +583,34 @@ National Student Paryavaran Competition
 href="https://ecomitram.org/activities/nspc-2026/certificate/6aa1797c1ff1edf63543579b"
 target="_blank"
 class="btn">
+
 View Certificate
+
 </a>
 
 </div>
 
 
-<!-- CERTIFICATE 2 -->
+
+<!-- DELOITTE CERTIFICATE -->
+
 <div class="certificate-card">
 
 <h3>
-Technical / Data Science Certificate
+Deloitte Certificate
 </h3>
 
 <p>
-Certificate of achievement in technical
-learning and skill development.
+Professional Certificate
 </p>
 
-<a href="#" class="btn">
+<a
+href="deloitte-certificate.pdf"
+target="_blank"
+class="btn">
+
 View Certificate
+
 </a>
 
 </div>
@@ -515,66 +621,95 @@ View Certificate
 </section>
 
 
-<!-- RESUME -->
-<section class="resume" id="resume">
 
-<h2 class="section-title">My Resume</h2>
+<!-- RESUME -->
+
+<section
+class="resume"
+id="resume">
+
+<h2 class="section-title">
+My Resume
+</h2>
+
 
 <p>
-Here you can view or download my latest resume.
+You can view or download my latest resume.
 </p>
+
 
 <a
 href="resume.pdf"
 target="_blank"
 class="btn">
+
 📄 View Resume
+
 </a>
+
 
 <a
 href="resume.pdf"
 download
 class="btn">
+
 ⬇️ Download Resume
+
 </a>
 
 </section>
 
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
 
-<h2 class="section-title">Contact Me</h2>
+<!-- CONTACT -->
+
+<section
+class="contact"
+id="contact">
+
+<h2 class="section-title">
+Contact Me
+</h2>
+
 
 <p>
 📧 Email:
-<a href="mailto:sravanimangali02@gmail.com">
+<a
+href="mailto:sravanimangali02@gmail.com">
 sravanimangali02@gmail.com
 </a>
 </p>
+
 
 <p>
 💻 GitHub:
 <a
 href="https://github.com/sravanimangali02-design"
 target="_blank">
+
 github.com/sravanimangali02-design
+
 </a>
 </p>
+
 
 <p>
 🔗 LinkedIn:
 <a
 href="https://linkedin.com/in/sravani-sravani-6a9767413/"
 target="_blank">
+
 linkedin.com/in/sravani-sravani-6a9767413
+
 </a>
 </p>
 
 </section>
 
 
+
 <!-- FOOTER -->
+
 <footer>
 
 <p>
@@ -582,6 +717,7 @@ linkedin.com/in/sravani-sravani-6a9767413
 </p>
 
 </footer>
+
 
 </body>
 </html>
