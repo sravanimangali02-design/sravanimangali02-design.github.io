@@ -21,6 +21,7 @@
             font-family: Arial, sans-serif;
             background: #f5f7fb;
             color: #222;
+            line-height: 1.6;
         }
 
         nav {
@@ -41,7 +42,7 @@
         nav ul {
             display: flex;
             list-style: none;
-            gap: 25px;
+            gap: 22px;
         }
 
         nav ul li a {
@@ -74,7 +75,7 @@
             border-radius: 50%;
             object-fit: cover;
             border: 5px solid white;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
             margin-bottom: 25px;
         }
 
@@ -85,7 +86,7 @@
         }
 
         .hero h3 {
-            font-size: 25px;
+            font-size: 24px;
             color: #2563eb;
             margin-bottom: 15px;
         }
@@ -99,7 +100,7 @@
         .btn {
             display: inline-block;
             padding: 12px 25px;
-            margin: 5px;
+            margin: 6px;
             background: #2563eb;
             color: white;
             text-decoration: none;
@@ -109,6 +110,14 @@
 
         .btn:hover {
             background: #1d4ed8;
+        }
+
+        .resume-btn {
+            background: #111827;
+        }
+
+        .resume-btn:hover {
+            background: #374151;
         }
 
         section {
@@ -141,7 +150,7 @@
             background: white;
             padding: 15px 25px;
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
             font-weight: bold;
         }
 
@@ -155,7 +164,7 @@
             background: white;
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
 
         .project h3 {
@@ -174,7 +183,7 @@
             padding: 30px;
             border-radius: 12px;
             text-align: center;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
 
         .certificate-box h3 {
@@ -229,10 +238,6 @@
                 font-size: 34px;
             }
 
-            .hero h3 {
-                font-size: 21px;
-            }
-
             .profile-pic {
                 width: 150px;
                 height: 150px;
@@ -263,7 +268,8 @@
 
         <div class="hero-content">
 
-            <img src="./profile.jpg"
+            <!-- PROFILE PHOTO -->
+            <img src="profile.jpg"
                  alt="Sravani Mangali"
                  class="profile-pic">
 
@@ -276,12 +282,15 @@
                 Data Science, Machine Learning, Python and SQL.
             </p>
 
-            <a href="#projects" class="btn">
-                View My Projects
+            <!-- RESUME BUTTON -->
+            <a href="resume.pdf"
+               target="_blank"
+               class="btn resume-btn">
+                📄 View My Resume
             </a>
 
-            <a href="#contact" class="btn">
-                Contact Me
+            <a href="#projects" class="btn">
+                View My Projects
             </a>
 
         </div>
@@ -397,6 +406,7 @@
 
         <div class="contact">
 
+            <!-- EMAIL -->
             <p>
                 📧 Email:
                 <a href="mailto:YOUR_EMAIL@gmail.com">
@@ -404,6 +414,7 @@
                 </a>
             </p>
 
+            <!-- GITHUB -->
             <p>
                 💻 GitHub:
                 <a
@@ -413,6 +424,7 @@
                 </a>
             </p>
 
+            <!-- LINKEDIN -->
             <p>
                 🔗 LinkedIn:
                 <a
