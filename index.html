@@ -17,7 +17,7 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: #f7f9fc;
+            background: #f5f7fb;
             color: #222;
             line-height: 1.6;
         }
@@ -25,7 +25,7 @@
         /* NAVBAR */
         nav {
             background: #111827;
-            padding: 18px 8%;
+            padding: 18px 7%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -41,7 +41,8 @@
         nav ul {
             list-style: none;
             display: flex;
-            gap: 25px;
+            gap: 22px;
+            flex-wrap: wrap;
         }
 
         nav ul li a {
@@ -56,13 +57,13 @@
 
         /* HERO */
         .hero {
-            min-height: 90vh;
+            min-height: 92vh;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
             padding: 50px 20px;
-            background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+            background: linear-gradient(135deg, #dbeafe, #f8fafc);
         }
 
         .hero-content {
@@ -115,7 +116,7 @@
 
         /* SECTIONS */
         section {
-            padding: 70px 8%;
+            padding: 70px 7%;
         }
 
         section h2 {
@@ -153,8 +154,8 @@
             font-weight: bold;
         }
 
-        /* PROJECTS & CERTIFICATES */
-        .projects-container {
+        /* PROJECTS */
+        .cards-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
@@ -214,9 +215,8 @@
             }
 
             nav ul {
-                gap: 12px;
-                flex-wrap: wrap;
                 justify-content: center;
+                gap: 12px;
             }
 
             .hero h1 {
@@ -254,12 +254,11 @@
     </nav>
 
 
-    <!-- HERO -->
+    <!-- HOME -->
     <section class="hero" id="home">
 
         <div class="hero-content">
 
-            <!-- PROFILE PHOTO -->
             <img
                 src="./profile.jpg"
                 alt="Sravani Mangali"
@@ -275,7 +274,6 @@
                 Python, SQL, Machine Learning and real-world projects.
             </p>
 
-            <!-- RESUME BUTTON -->
             <a
                 href="./resume.pdf"
                 target="_blank"
@@ -341,7 +339,7 @@
 
         <h2>My Projects</h2>
 
-        <div class="projects-container">
+        <div class="cards-container">
 
             <div class="card">
 
@@ -378,7 +376,7 @@
 
         <h2>Certificates</h2>
 
-        <div class="projects-container">
+        <div class="cards-container">
 
             <!-- NSPC -->
             <div class="card">
@@ -448,7 +446,6 @@
 
         <div class="contact">
 
-            <!-- EMAIL -->
             <p>
                 📧 Email:
                 <a href="mailto:sravanimangali02@gmail.com">
@@ -456,7 +453,6 @@
                 </a>
             </p>
 
-            <!-- GITHUB -->
             <p>
                 💻 GitHub:
                 <a
@@ -466,7 +462,6 @@
                 </a>
             </p>
 
-            <!-- LINKEDIN -->
             <p>
                 🔗 LinkedIn:
                 <a
