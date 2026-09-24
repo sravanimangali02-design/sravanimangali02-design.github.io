@@ -1,516 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sravani Mangali | Data Science Portfolio</title>
+<title>Sravani Mangali | Portfolio</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f7fb;
-            color: #222;
-            line-height: 1.6;
-        }
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f7fb;
+    color:#222;
+    line-height:1.6;
+}
 
-        /* NAVBAR */
-        nav {
-            background: #111827;
-            padding: 18px 8%;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+/* NAVBAR */
+nav{
+    background:#111827;
+    padding:18px 7%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
 
-        nav .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
-        nav h2 {
-            color: white;
-        }
+nav h2{
+    color:white;
+}
 
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 25px;
-        }
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:22px;
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 15px;
-        }
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
 
-        nav ul li a:hover {
-            color: #60a5fa;
-        }
+nav ul li a:hover{
+    color:#60a5fa;
+}
 
-        /* HERO */
-        .hero {
-            min-height: 90vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 50px 20px;
-            background: linear-gradient(135deg, #eef2ff, #f8fafc);
-        }
+/* HERO */
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:50px 20px;
+    background:linear-gradient(135deg,#eef2ff,#f8fafc);
+}
 
-        .hero-content {
-            max-width: 800px;
-        }
+.hero-content{
+    max-width:850px;
+}
 
-        .profile-pic {
-            width: 170px;
-            height: 170px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid white;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-            margin-bottom: 25px;
-        }
+.profile-pic{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid white;
+    box-shadow:0 8px 25px rgba(0,0,0,0.18);
+    margin-bottom:25px;
+}
 
-        .hero h1 {
-            font-size: 48px;
-            color: #111827;
-            margin-bottom: 10px;
-        }
+.hero h1{
+    font-size:46px;
+    color:#111827;
+    margin-bottom:8px;
+}
 
-        .hero h2 {
-            font-size: 25px;
-            color: #2563eb;
-            margin-bottom: 15px;
-        }
+.hero h2{
+    color:#2563eb;
+    font-size:25px;
+    margin-bottom:15px;
+}
 
-        .hero p {
-            font-size: 18px;
-            color: #4b5563;
-            margin-bottom: 25px;
-        }
+.hero p{
+    font-size:18px;
+    color:#4b5563;
+    margin-bottom:25px;
+}
 
-        .btn {
-            display: inline-block;
-            background: #2563eb;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 8px;
-            text-decoration: none;
-            margin: 5px;
-            transition: 0.3s;
-        }
+.btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:12px 24px;
+    border-radius:8px;
+    text-decoration:none;
+    margin:6px;
+    transition:0.3s;
+}
 
-        .btn:hover {
-            background: #1d4ed8;
-            transform: translateY(-2px);
-        }
+.btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
 
-        .btn-outline {
-            background: transparent;
-            color: #2563eb;
-            border: 2px solid #2563eb;
-        }
+.btn-outline{
+    background:white;
+    color:#2563eb;
+    border:2px solid #2563eb;
+}
 
-        .btn-outline:hover {
-            background: #2563eb;
-            color: white;
-        }
+/* SECTIONS */
+section{
+    padding:70px 8%;
+}
 
-        /* COMMON SECTION */
-        section {
-            padding: 70px 8%;
-        }
+.section-title{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:40px;
+    color:#111827;
+}
 
-        .section-title {
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 40px;
-            color: #111827;
-        }
+/* ABOUT */
+.about{
+    background:white;
+}
 
-        /* ABOUT */
-        .about {
-            background: white;
-        }
+.about-content{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    color:#4b5563;
+    font-size:17px;
+}
 
-        .about-content {
-            max-width: 850px;
-            margin: auto;
-            text-align: center;
-            font-size: 17px;
-            color: #4b5563;
-        }
+/* SKILLS */
+.skills-container{
+    max-width:1000px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
 
-        /* SKILLS */
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
+.skill{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+    font-weight:bold;
+    transition:0.3s;
+}
 
-        .skill {
-            background: white;
-            padding: 25px;
-            text-align: center;
-            border-radius: 12px;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
-            font-weight: bold;
-            color: #1f2937;
-            transition: 0.3s;
-        }
+.skill:hover{
+    transform:translateY(-5px);
+}
 
-        .skill:hover {
-            transform: translateY(-5px);
-        }
+/* PROJECTS */
+.projects{
+    background:white;
+}
 
-        /* PROJECTS */
-        .projects {
-            background: white;
-        }
+.projects-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
 
-        .projects-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
+.project-card{
+    background:#f8fafc;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+}
 
-        .project-card {
-            background: #f8fafc;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
-            transition: 0.3s;
-        }
+.project-card h3{
+    color:#2563eb;
+    margin-bottom:12px;
+}
 
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
+.project-card p{
+    color:#4b5563;
+    margin-bottom:12px;
+}
 
-        .project-card h3 {
-            color: #2563eb;
-            margin-bottom: 12px;
-        }
+/* CERTIFICATES */
+.certificate-container{
+    max-width:850px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
 
-        .project-card p {
-            color: #4b5563;
-            margin-bottom: 15px;
-        }
+.certificate-card{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+}
 
-        /* CERTIFICATE */
-        .certificate-card {
-            max-width: 700px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            text-align: center;
-            border-radius: 12px;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
-        }
+.certificate-card h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
 
-        .certificate-card h3 {
-            color: #2563eb;
-            margin-bottom: 10px;
-        }
+.certificate-card p{
+    color:#555;
+    margin-bottom:15px;
+}
 
-        .certificate-card p {
-            color: #4b5563;
-            margin-bottom: 20px;
-        }
+/* RESUME */
+.resume{
+    background:white;
+    text-align:center;
+}
 
-        /* CONTACT */
-        .contact {
-            background: #111827;
-            color: white;
-            text-align: center;
-        }
+.resume p{
+    color:#555;
+    margin-bottom:20px;
+}
 
-        .contact .section-title {
-            color: white;
-        }
+/* CONTACT */
+.contact{
+    background:#111827;
+    color:white;
+    text-align:center;
+}
 
-        .contact p {
-            margin: 10px 0;
-        }
+.contact .section-title{
+    color:white;
+}
 
-        .contact a {
-            color: #60a5fa;
-            text-decoration: none;
-        }
+.contact p{
+    margin:12px 0;
+}
 
-        .contact a:hover {
-            text-decoration: underline;
-        }
+.contact a{
+    color:#60a5fa;
+    text-decoration:none;
+}
 
-        /* FOOTER */
-        footer {
-            background: #030712;
-            color: #9ca3af;
-            text-align: center;
-            padding: 20px;
-        }
+/* FOOTER */
+footer{
+    background:#030712;
+    color:#9ca3af;
+    text-align:center;
+    padding:20px;
+}
 
-        /* MOBILE */
-        @media (max-width: 768px) {
+/* MOBILE */
+@media(max-width:768px){
 
-            nav .container {
-                flex-direction: column;
-                gap: 15px;
-            }
+    .nav-container{
+        flex-direction:column;
+        gap:15px;
+    }
 
-            nav ul {
-                gap: 12px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+    }
 
-            .hero h1 {
-                font-size: 36px;
-            }
+    .hero h1{
+        font-size:34px;
+    }
 
-            .hero h2 {
-                font-size: 21px;
-            }
+    .hero h2{
+        font-size:21px;
+    }
 
-            section {
-                padding: 50px 5%;
-            }
-        }
-    </style>
+    section{
+        padding:50px 5%;
+    }
+}
+</style>
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav>
-        <div class="container">
-            <h2>Sravani Mangali</h2>
+<!-- NAVBAR -->
+<nav>
+<div class="nav-container">
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificate">Certificate</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<h2>Sravani Mangali</h2>
 
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#certificates">Certificates</a></li>
+<li><a href="#resume">Resume</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
-    <!-- HOME -->
-    <section class="hero" id="home">
+</div>
+</nav>
 
-        <div class="hero-content">
 
-            <!-- PHOTO -->
-            <img
-                src="profile.jpg"
-                alt="Sravani Mangali"
-                class="profile-pic"
-            >
+<!-- HOME -->
+<section class="hero" id="home">
 
-            <h1>Hi, I'm Sravani Mangali 👋</h1>
+<div class="hero-content">
 
-            <h2>Data Science Enthusiast</h2>
+<img src="profile.jpg"
+     alt="Sravani Mangali"
+     class="profile-pic">
 
-            <p>
-                Final-year B.Tech student passionate about Data Science,
-                Python, SQL, Machine Learning and building practical projects.
-            </p>
+<h1>Hi, I'm Sravani Mangali 👋</h1>
 
-            <a href="#projects" class="btn">
-                View My Projects
-            </a>
+<h2>Data Science Enthusiast</h2>
 
-            <a href="#contact" class="btn btn-outline">
-                Contact Me
-            </a>
+<p>
+Final-year B.Tech student passionate about Data Science,
+Python, SQL, Machine Learning and practical projects.
+</p>
 
-        </div>
+<a href="#projects" class="btn">
+View Projects
+</a>
 
-    </section>
+<a href="resume.pdf"
+   target="_blank"
+   class="btn btn-outline">
+View Resume
+</a>
 
+<a href="resume.pdf"
+   download
+   class="btn">
+Download Resume
+</a>
 
-    <!-- ABOUT -->
-    <section class="about" id="about">
+</div>
+</section>
 
-        <h2 class="section-title">About Me</h2>
 
-        <div class="about-content">
+<!-- ABOUT -->
+<section class="about" id="about">
 
-            <p>
-                I am a final-year B.Tech student interested in Data Science
-                and Machine Learning. I am currently developing my technical
-                skills in Python, SQL, DBMS, HTML and Machine Learning.
-            </p>
+<h2 class="section-title">About Me</h2>
 
-            <br>
+<div class="about-content">
 
-            <p>
-                I enjoy learning new technologies and working on practical
-                projects that help me improve my problem-solving and
-                analytical skills. I am currently preparing for technical
-                interviews and entry-level opportunities in the Data Science
-                and IT domain.
-            </p>
+<p>
+I am a final-year B.Tech student interested in Data Science
+and Machine Learning. I have been developing my skills in
+Python, SQL, DBMS, HTML and Machine Learning.
+</p>
 
-        </div>
+<br>
 
-    </section>
+<p>
+I enjoy learning new technologies and building practical
+projects. I am currently preparing for technical interviews
+and entry-level opportunities in the IT and Data Science domain.
+</p>
 
+</div>
+</section>
 
-    <!-- SKILLS -->
-    <section id="skills">
 
-        <h2 class="section-title">My Skills</h2>
+<!-- SKILLS -->
+<section id="skills">
 
-        <div class="skills-container">
+<h2 class="section-title">My Skills</h2>
 
-            <div class="skill">Python</div>
+<div class="skills-container">
 
-            <div class="skill">SQL</div>
+<div class="skill">Python</div>
+<div class="skill">SQL</div>
+<div class="skill">DBMS</div>
+<div class="skill">HTML</div>
+<div class="skill">Machine Learning</div>
+<div class="skill">Data Science</div>
 
-            <div class="skill">DBMS</div>
+</div>
+</section>
 
-            <div class="skill">HTML</div>
 
-            <div class="skill">Machine Learning</div>
+<!-- PROJECTS -->
+<section class="projects" id="projects">
 
-            <div class="skill">Data Science</div>
+<h2 class="section-title">My Projects</h2>
 
-        </div>
+<div class="projects-container">
 
-    </section>
+<div class="project-card">
 
+<h3>Stock Price Prediction</h3>
 
-    <!-- PROJECTS -->
-    <section class="projects" id="projects">
+<p>
+Stock price prediction project using
+GAN-LSTM-Attention model.
+</p>
 
-        <h2 class="section-title">My Projects</h2>
+<p>
+<strong>Technologies:</strong>
+Python, Machine Learning, Deep Learning
+</p>
 
-        <div class="projects-container">
+</div>
 
-            <div class="project-card">
 
-                <h3>Stock Price Prediction</h3>
+<div class="project-card">
 
-                <p>
-                    A machine learning project focused on predicting stock
-                    prices using a GAN-LSTM-Attention model.
-                </p>
+<h3>Smart Expense Tracker</h3>
 
-                <p>
-                    <strong>Technologies:</strong>
-                    Python, Machine Learning, Deep Learning
-                </p>
+<p>
+A project designed to manage and track
+daily expenses efficiently.
+</p>
 
-            </div>
+<p>
+<strong>Technologies:</strong>
+Python, HTML, Data Handling
+</p>
 
+</div>
 
-            <div class="project-card">
+</div>
+</section>
 
-                <h3>Smart Expense Tracker</h3>
 
-                <p>
-                    A simple project designed to help users manage and track
-                    their daily expenses efficiently.
-                </p>
+<!-- CERTIFICATES -->
+<section id="certificates">
 
-                <p>
-                    <strong>Technologies:</strong>
-                    Python, HTML, Data Handling
-                </p>
+<h2 class="section-title">Certificates</h2>
 
-            </div>
+<div class="certificate-container">
 
-        </div>
+<!-- CERTIFICATE 1 -->
 
-    </section>
+<div class="certificate-card">
 
+<h3>
+National Student Paryavaran Competition
+(NSPC) 2026
+</h3>
 
-    <!-- CERTIFICATE -->
-    <section id="certificate">
+<p>
+🏆 Gold Badge
+</p>
 
-        <h2 class="section-title">Certificates</h2>
+<a
+href="https://ecomitram.org/activities/nspc-2026/certificate/6aa1797c1ff1edf63543579b"
+target="_blank"
+class="btn">
+View Certificate
+</a>
 
-        <div class="certificate-card">
+</div>
 
-            <h3>
-                National Student Paryavaran Competition (NSPC) 2026
-            </h3>
 
-            <p>
-                Gold Badge
-            </p>
+<!-- CERTIFICATE 2 -->
 
-            <a
-                href="https://ecomitram.org/activities/nspc-2026/certificate/6aa1797c1ff1edf63543579b"
-                target="_blank"
-                class="btn"
-            >
-                View Certificate
-            </a>
+<div class="certificate-card">
 
-        </div>
+<h3>
+Data Science / Technical Certificate
+</h3>
 
-    </section>
+<p>
+Certificate of achievement in a technical
+learning program.
+</p>
 
+<a href="#" class="btn">
+View Certificate
+</a>
 
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
+</div>
 
-        <h2 class="section-title">Contact Me</h2>
+</div>
+</section>
 
-        <p>
-            📧 Email:
-            <a href="mailto:sravanimangali02@gmail.com">
-                sravanimangali02@gmail.com
-            </a>
-        </p>
 
-        <p>
-            💻 GitHub:
-            <a
-                href="https://github.com/sravanimangali02-design"
-                target="_blank"
-            >
-                github.com/sravanimangali02-design
-            </a>
-        </p>
+<!-- RESUME -->
+<section class="resume" id="resume">
 
-        <p>
-            🔗 LinkedIn:
-            <a
-                href="https://linkedin.com/in/sravani-sravani-6a9767413/"
-                target="_blank"
-            >
-                linkedin.com/in/sravani-sravani-6a9767413
-            </a>
-        </p>
+<h2 class="section-title">My Resume</h2>
 
-    </section>
+<p>
+You can view or download my latest resume.
+</p>
 
+<a href="resume.pdf"
+   target="_blank"
+   class="btn">
+📄 View Resume
+</a>
 
-    <!-- FOOTER -->
-    <footer>
+<a href="resume.pdf"
+   download
+   class="btn">
+⬇️ Download Resume
+</a>
 
-        <p>
-            © 2026 Sravani Mangali. All Rights Reserved.
-        </p>
+</section>
 
-    </footer>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+<h2 class="section-title">Contact Me</h2>
+
+<p>
+📧 Email:
+<a href="mailto:sravanimangali02@gmail.com">
+sravanimangali02@gmail.com
+</a>
+</p>
+
+<p>
+💻 GitHub:
+<a
+href="https://github.com/sravanimangali02-design"
+target="_blank">
+github.com/sravanimangali02-design
+</a>
+</p>
+
+<p>
+🔗 LinkedIn:
+<a
+href="https://linkedin.com/in/sravani-sravani-6a9767413/"
+target="_blank">
+linkedin.com/in/sravani-sravani-6a9767413
+</a>
+</p>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+<p>
+© 2026 Sravani Mangali | Data Science Portfolio
+</p>
+
+</footer>
 
 </body>
 </html>
