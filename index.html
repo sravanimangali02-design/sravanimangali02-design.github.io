@@ -21,6 +21,7 @@
             line-height: 1.6;
         }
 
+        /* Navigation */
         nav {
             background: #111827;
             padding: 18px 8%;
@@ -46,6 +47,7 @@
             color: #60a5fa;
         }
 
+        /* Hero Section */
         .hero {
             min-height: 90vh;
             display: flex;
@@ -71,6 +73,17 @@
             font-size: 18px;
         }
 
+        /* Profile Photo */
+        .profile-pic {
+            width: 170px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 25px;
+            border: 5px solid #2563eb;
+        }
+
+        /* Buttons */
         .btn {
             display: inline-block;
             margin-top: 25px;
@@ -81,6 +94,11 @@
             border-radius: 8px;
         }
 
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        /* Sections */
         section {
             padding: 80px 8%;
         }
@@ -91,12 +109,15 @@
             margin-bottom: 40px;
         }
 
+        /* About */
         .about {
             max-width: 800px;
             margin: auto;
             text-align: center;
+            font-size: 18px;
         }
 
+        /* Skills */
         .skills {
             display: flex;
             justify-content: center;
@@ -112,6 +133,7 @@
             font-weight: bold;
         }
 
+        /* Projects */
         .projects {
             display: flex;
             justify-content: center;
@@ -137,6 +159,7 @@
             font-weight: bold;
         }
 
+        /* Certificate */
         .certificate {
             max-width: 600px;
             margin: auto;
@@ -147,8 +170,19 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
         }
 
+        .certificate a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Contact */
         .contact {
             text-align: center;
+        }
+
+        .contact p {
+            margin: 10px;
         }
 
         .contact a {
@@ -156,6 +190,7 @@
             text-decoration: none;
         }
 
+        /* Footer */
         footer {
             background: #111827;
             color: white;
@@ -163,7 +198,9 @@
             padding: 20px;
         }
 
+        /* Mobile */
         @media (max-width: 700px) {
+
             nav {
                 flex-direction: column;
                 gap: 15px;
@@ -171,10 +208,24 @@
 
             nav a {
                 margin: 5px;
+                font-size: 14px;
             }
 
             .hero h1 {
                 font-size: 40px;
+            }
+
+            .hero h2 {
+                font-size: 22px;
+            }
+
+            .profile-pic {
+                width: 140px;
+                height: 140px;
+            }
+
+            .card {
+                width: 100%;
             }
         }
     </style>
@@ -182,7 +233,9 @@
 
 <body>
 
+    <!-- Navigation -->
     <nav>
+
         <h2>Sravani</h2>
 
         <div>
@@ -192,12 +245,19 @@
             <a href="#certificates">Certificates</a>
             <a href="#contact">Contact</a>
         </div>
+
     </nav>
 
 
+    <!-- Hero Section -->
     <section class="hero">
 
         <div>
+
+            <!-- Profile Photo -->
+            <img src="profile.jpg"
+                 alt="Sravani Mangali"
+                 class="profile-pic">
 
             <p>Hello, I'm</p>
 
@@ -219,6 +279,7 @@
     </section>
 
 
+    <!-- About Section -->
     <section id="about">
 
         <h2 class="title">About Me</h2>
@@ -239,6 +300,7 @@
     </section>
 
 
+    <!-- Skills Section -->
     <section id="skills">
 
         <h2 class="title">My Skills</h2>
@@ -256,6 +318,7 @@
     </section>
 
 
+    <!-- Projects Section -->
     <section id="projects">
 
         <h2 class="title">My Projects</h2>
@@ -290,6 +353,7 @@
     </section>
 
 
+    <!-- Certificates Section -->
     <section id="certificates">
 
         <h2 class="title">Certificates</h2>
@@ -314,13 +378,17 @@
     </section>
 
 
+    <!-- Contact Section -->
     <section id="contact">
 
         <h2 class="title">Contact Me</h2>
 
         <div class="contact">
 
-            <p>Email: YOUR_EMAIL@gmail.com</p>
+            <p>
+                Email:
+                YOUR_EMAIL@gmail.com
+            </p>
 
             <p>
                 GitHub:
@@ -343,9 +411,12 @@
     </section>
 
 
+    <!-- Footer -->
     <footer>
 
-        <p>© 2026 Sravani Mangali | Data Science Portfolio</p>
+        <p>
+            © 2026 Sravani Mangali | Data Science Portfolio
+        </p>
 
     </footer>
 
