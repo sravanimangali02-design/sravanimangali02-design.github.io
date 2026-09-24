@@ -1,458 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CERTIFICATES -->
+<section id="certificates">
 
-    <title>Sravani Mangali | Data Science Portfolio</title>
+    <h2>Certificates</h2>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+    <div class="projects-container">
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f7f9fc;
-            color: #222;
-            line-height: 1.6;
-        }
+        <!-- NSPC CERTIFICATE -->
+        <div class="card">
 
-        /* NAVBAR */
-        nav {
-            background: #111827;
-            padding: 18px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav h2 {
-            color: white;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav ul li a:hover {
-            color: #60a5fa;
-        }
-
-        /* HERO */
-        .hero {
-            min-height: 90vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #e0f2fe, #f8fafc);
-        }
-
-        .hero-content {
-            max-width: 800px;
-        }
-
-        .profile-pic {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid white;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-            margin-bottom: 20px;
-        }
-
-        .hero h1 {
-            font-size: 45px;
-            margin-bottom: 10px;
-            color: #111827;
-        }
-
-        .hero h3 {
-            color: #2563eb;
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            color: #555;
-            margin-bottom: 25px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #2563eb;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            margin: 5px;
-            font-weight: bold;
-        }
-
-        .btn:hover {
-            background: #1d4ed8;
-        }
-
-        /* SECTIONS */
-        section {
-            padding: 70px 8%;
-        }
-
-        section h2 {
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 35px;
-            color: #111827;
-        }
-
-        .about {
-            max-width: 900px;
-            margin: auto;
-            text-align: center;
-            font-size: 18px;
-        }
-
-        /* SKILLS */
-        .skills-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .skill {
-            background: white;
-            padding: 15px 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            font-weight: bold;
-        }
-
-        /* PROJECTS */
-        .projects-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card h3 {
-            color: #2563eb;
-            margin-bottom: 10px;
-        }
-
-        .card p {
-            color: #555;
-            margin-bottom: 15px;
-        }
-
-        /* CERTIFICATES */
-        .certificate {
-            max-width: 700px;
-            margin: auto;
-            text-align: center;
-        }
-
-        /* CONTACT */
-        .contact {
-            text-align: center;
-        }
-
-        .contact a {
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact p {
-            margin: 10px 0;
-        }
-
-        /* FOOTER */
-        footer {
-            background: #111827;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
-
-        /* MOBILE */
-        @media (max-width: 700px) {
-
-            nav {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav ul {
-                gap: 12px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .hero h1 {
-                font-size: 32px;
-            }
-
-            .hero h3 {
-                font-size: 20px;
-            }
-
-            .profile-pic {
-                width: 140px;
-                height: 140px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <!-- NAVBAR -->
-    <nav>
-        <h2>Sravani Mangali</h2>
-
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-
-    <!-- HERO -->
-    <section class="hero" id="home">
-
-        <div class="hero-content">
-
-            <!-- IMPORTANT: PHOTO FILE NAME MUST BE profile.jpg -->
-            <img src="./profile.jpg"
-                 alt="Sravani Mangali"
-                 class="profile-pic">
-
-            <h1>Hi, I'm Sravani Mangali 👋</h1>
-
-            <h3>Data Science Enthusiast</h3>
+            <h3>NSPC 2026 - Gold Badge</h3>
 
             <p>
-                Final-year B.Tech student passionate about Data Science,
-                Python, SQL, Machine Learning and building real-world projects.
+                National Student Paryavaran Competition (NSPC) 2026
             </p>
 
-            <a href="#projects" class="btn">View My Projects</a>
-
-            <a href="#contact" class="btn">Contact Me</a>
+            <a
+                href="https://ecomitram.org/activities/nspc-2026/certificate/6aa1797c1ff1edf63543579b"
+                target="_blank"
+                class="btn">
+                View Certificate
+            </a>
 
         </div>
 
-    </section>
 
+        <!-- DELOITTE CERTIFICATE -->
+        <div class="card">
 
-    <!-- ABOUT -->
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <div class="about">
+            <h3>Deloitte Certificate</h3>
 
             <p>
-                I am a final-year B.Tech student interested in Data Science
-                and Machine Learning. I am currently preparing for campus
-                placements and technical interviews.
+                Deloitte Certificate
             </p>
 
-            <p>
-                I enjoy learning Python, SQL, Machine Learning and
-                developing practical projects that solve real-world problems.
-            </p>
+            <a
+                href="./deloitte-certificate.pdf"
+                target="_blank"
+                class="btn">
+                View Certificate
+            </a>
 
         </div>
 
-    </section>
 
+        <!-- DATA ANALYST ROADMAP CERTIFICATE -->
+        <div class="card">
 
-    <!-- SKILLS -->
-    <section id="skills">
-
-        <h2>My Skills</h2>
-
-        <div class="skills-container">
-
-            <div class="skill">Python</div>
-            <div class="skill">SQL</div>
-            <div class="skill">DBMS</div>
-            <div class="skill">HTML</div>
-            <div class="skill">Machine Learning</div>
-            <div class="skill">Data Science</div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS -->
-    <section id="projects">
-
-        <h2>My Projects</h2>
-
-        <div class="projects-container">
-
-            <div class="card">
-
-                <h3>Stock Price Prediction</h3>
-
-                <p>
-                    Stock price prediction project using
-                    GAN-LSTM-Attention model to analyze stock market
-                    data and predict future prices.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>Smart Expense Tracker</h3>
-
-                <p>
-                    A Python-based project for tracking expenses,
-                    analyzing spending patterns and visualizing
-                    financial data using charts.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CERTIFICATES -->
-    <section id="certificates">
-
-        <h2>Certificates</h2>
-
-        <div class="projects-container">
-
-            <div class="card">
-
-                <h3>NSPC 2026 - Gold Badge</h3>
-
-                <p>
-                    National Student Paryavaran Competition (NSPC) 2026
-                </p>
-
-                <a
-                    href="https://ecomitram.org/activities/nspc-2026/certificate/6aa1797c1ff1edf63543579b"
-                    target="_blank"
-                    class="btn">
-                    View Certificate
-                </a>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>Deloitte Certificate</h3>
-
-                <p>
-                    Deloitte Data Analytics / Technology Certificate
-                </p>
-
-                <!-- Upload deloitte-certificate.pdf to GitHub -->
-                <a
-                    href="deloitte-certificate.pdf"
-                    target="_blank"
-                    class="btn">
-                    View Certificate
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-    <section id="contact">
-
-        <h2>Contact Me</h2>
-
-        <div class="contact">
-
-            <!-- Replace YOUR_EMAIL@gmail.com with your actual email -->
-            <p>
-                📧 Email:
-                <a href="mailto:sravanimangali02@gmail.com">
-                    sravanimangali02@gmail.com
-                </a>
-            </p>
+            <h3>Data Analyst Roadmap Certificate</h3>
 
             <p>
-                💻 GitHub:
-                <a
-                    href="https://github.com/sravanimangali02-design"
-                    target="_blank">
-                    GitHub Profile
-                </a>
+                Data Analyst Roadmap Certificate
             </p>
 
-            <p>
-                🔗 LinkedIn:
-                <a
-                    href="https://linkedin.com/in/sravani-sravani-6a9767413/"
-                    target="_blank">
-                    LinkedIn Profile
-                </a>
-            </p>
+            <a
+                href="./data-analyst-roadmap-certificate.pdf"
+                target="_blank"
+                class="btn">
+                View Certificate
+            </a>
 
         </div>
 
-    </section>
+    </div>
 
-
-    <!-- FOOTER -->
-    <footer>
-
-        <p>
-            © 2026 Sravani Mangali | Data Science Portfolio
-        </p>
-
-    </footer>
-
-</body>
-</html>
+</section>
